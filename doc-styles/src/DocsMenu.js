@@ -1,7 +1,7 @@
 import { LitElement, html, css } from '~/core';
 import { coolGray } from '~/colors';
 import { spacing } from '~/spacing';
-import { theme, setTheme } from '~/themes';
+import { setTheme } from '~/themes';
 
 export class DocsMenu extends LitElement {
   static get styles() {
