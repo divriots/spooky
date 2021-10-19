@@ -25,6 +25,7 @@ export const setTheme = (_theme) => {
     '--simba-focus-ring-color': colors[theme][300],
     '--simba-text-color': colors.coolGray[900],
     '--simba-text-color-dark': colors.coolGray[50],
+    '--simba-text-color-orange': colors.amber[100],
     '--simba-bg-color': 'white',
     '--simba-bg-color-dark': '#24292e',
     '--simba-switch-color-hover': `${colors[theme][500]}30`,
@@ -34,6 +35,7 @@ export const setTheme = (_theme) => {
     /** Used by docs only */
     '--simba-heading-color': colors.coolGray[900],
     '--simba-heading-color-dark': colors.coolGray[50],
+    '--simba-heading-color-orange': colors.amber[200],
     '--simba-blockquote-bg-color': colors[theme][50],
     '--simba-blockquote-bg-color-dark': `${colors[theme][900]}30`,
   };

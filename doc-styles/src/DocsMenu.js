@@ -19,7 +19,7 @@ export class DocsMenu extends LitElement {
           padding: ${spacing['2.5']};
         }
 
-        p {
+        h1 {
           color: ${coolGray[50]};
           padding-right: ${spacing['2']};
         }
@@ -28,7 +28,7 @@ export class DocsMenu extends LitElement {
   }
 
   render() {
-    setTheme('amber');
+    setTheme('purple');
     return html` <h1>🎃 Spooky 👻</h1> `;
   }
 }

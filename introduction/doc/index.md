@@ -1,4 +1,4 @@
-# simba-starter
+# Spooky-starter
 
 ```js script
 import '~/doc-styles';
