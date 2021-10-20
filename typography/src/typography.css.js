@@ -9,6 +9,9 @@ export const family = {
   serif: css` ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
   mono: css`ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace`,
+  creepster: css`
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+  `,
 };
 
 // prettier-ignore

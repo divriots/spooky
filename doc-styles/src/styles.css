@@ -25,7 +25,7 @@ h6 {
 }
 
 a {
-  transition: var(--theme-color-transition);
+  transition: var(--simba-color-primary-500);
 }
 
 blockquote {
