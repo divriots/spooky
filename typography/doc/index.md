@@ -27,7 +27,7 @@ class DemoTypography extends ThemeMixin(LitElement) {
       }
 
       :host([theme='dark']) {
-        color: var(--simba-color-primary-200);
+        color: var(--simba-color-primary-700);
       }
     `;
   }

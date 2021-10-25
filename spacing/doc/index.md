@@ -29,7 +29,7 @@ class DemoSpacing extends ThemeMixin(LitElement) {
       }
 
       :host([theme='dark']) {
-        background-color: var(--simba-color-primary-200);
+        background-color: var(--simba-color-primary-700);
       }
     `;
   }

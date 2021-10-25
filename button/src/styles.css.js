@@ -29,12 +29,6 @@ export default css`
     background-color: var(--simba-color-primary-900);
   }
 
-  :host(:focus:not([disabled])),
-  :host(:focus-visible) {
-    box-shadow: 0 0 0 3px var(--simba-focus-ring-color);
-    outline: none;
-  }
-
   :host([variation='secondary']) {
     background-color: var(--simba-color-secondary-700);
   }
@@ -52,10 +46,11 @@ export default css`
   :host([variation='outline']),
   :host([variation='outline']) {
     background-color: transparent;
+    border: var(--simba-color-primary-500) solid 1px;
   }
 
   :host([variation='outline']:hover) {
-    border: var(--simba-color-primary-500) solid 2px;
+    border: var(--simba-color-primary-500) solid 3px;
   }
 
   :host([variation='outline']:active) {

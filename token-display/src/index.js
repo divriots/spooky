@@ -50,7 +50,7 @@ class TokenDisplay extends ThemeMixin(LitElement) {
       }
 
       :host([theme='dark']) .cell--border {
-        background-color: var(--simba-color-primary-200);
+        background-color: var(--simba-color-primary-700);
       }
 
       .cell--typography {
@@ -61,7 +61,7 @@ class TokenDisplay extends ThemeMixin(LitElement) {
       }
 
       :host([theme='dark']) .cell--typography {
-        color: var(--simba-color-primary-200);
+        color: var(--simba-color-primary-700);
       }
 
       .cell--spacing {
@@ -72,7 +72,7 @@ class TokenDisplay extends ThemeMixin(LitElement) {
       }
 
       :host([theme='dark']) .cell--spacing {
-        background-color: var(--simba-color-primary-200);
+        background-color: var(--simba-color-primary-700);
       }
 
       .horizontal-layout {
