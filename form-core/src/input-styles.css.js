@@ -7,6 +7,7 @@ import { spacing } from '~/spacing';
 export const inputStyles = css`
   :host {
     display: block;
+    font-family: var(--simba-font-creepster);
   }
 
   ::slotted(*:not(simba-select-invoker)) {
@@ -15,12 +16,17 @@ export const inputStyles = css`
   }
 
   .input-group__container > .input-group__input ::slotted(.form-control) {
-    border: 1px solid ${coolGray[300]};
+    border: 1px solid ${coolGray[500]};
     ${borderRadiusMixin('md')};
-    ${typographyMixin('sans', 'sm')};
     padding: ${spacing['2']} ${spacing['3']};
     margin-top: ${spacing['1']};
     width: 100%;
+    background-color: ${coolGray[800]};
+    font-family: var(--simba-font-creepster);
+  }
+
+  .input-group__container > .input-group__input ::slotted(.form-control:hover) {
+    border: 1px solid ${coolGray[300]};
   }
 
   .input-group__container > .input-group__input ::slotted(.form-control:focus),
@@ -29,7 +35,7 @@ export const inputStyles = css`
     ::slotted(.form-control:focus-visible) {
     outline: none;
     border-color: transparent;
-    box-shadow: 0 0 0 2px var(--simba-color-primary-500);
+    box-shadow: 0 0 0 2px ${coolGray[300]};
   }
 
   ::slotted([slot='label']) {
@@ -43,7 +49,7 @@ export const inputStyles = css`
   }
 
   ::slotted(.form-control) {
-    color: var(--simba-color-primary-500);
+    color: ${coolGray[50]};
   }
 
   :host([theme='dark']) ::slotted([slot='label']) {
@@ -66,7 +72,7 @@ export const inputStyles = css`
   }
 
   :host([theme='dark']) ::slotted(.form-control)::placeholder {
-    color: ${coolGray[500]};
+    color: ${coolGray[400]};
   }
 
   :host([theme='dark'][disabled]) ::slotted(.form-control) {
