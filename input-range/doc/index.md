@@ -5,7 +5,6 @@ Input range Webcomponent.
 ```js script
 import { html } from '~/core';
 import { Required, Validator } from '@lion/form-core';
-import { localize } from '@lion/localize';
 import { loadDefaultFeedbackMessages } from '@lion/validate-messages';
 import '~/doc-styles';
 import '../simba-input-range.js';
@@ -13,24 +12,15 @@ import '../simba-input-range.js';
 loadDefaultFeedbackMessages();
 ```
 
-Click the flip locale button to see localized default label in action as well as the validator messages, switching between Dutch and English.
-
 ```js preview-story
 export const input = () => html`
-  <button @click=${() => {
-    if (localize.locale === 'en-GB') {
-      localize.locale = 'nl-NL';
-    } else {
-      localize.locale = 'en-GB';
-    }
-  }}>flip locale</button>
   <simba-input-range
     style="max-width: 400px;"
     min="1"
     max="10"
     .modelValue=${5}
     .validators=${[new Required()]}
-    name="range" 
+    name="range"
     help-text="How would you rate this component?"
   ></simba-input-range>
 `;
@@ -49,7 +39,7 @@ export const inputMinimum = () => html`
     min="0"
     max="150"
     .validators=${[new Required(), new MinNumber(100)]}
-    name="range" 
+    name="range"
     help-text="Must exceed 100"
   ></simba-input-range>
 `;
@@ -78,7 +68,7 @@ You can also prefill and disable the range in case you don't want your user to c
 ```js preview-story
 export const inputDisabled = () => html`
   <simba-input-range
-    style="max-width: 400px;" 
+    style="max-width: 400px;"
     name="range"
     help-text="Preconfigured amount"
     .modelValue=${15}
