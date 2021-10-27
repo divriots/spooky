@@ -6,7 +6,6 @@ Select and select-rich Webcomponent.
 import { html, LitElement, render } from '~/core';
 import { Required } from '@lion/form-core';
 import { loadDefaultFeedbackMessages } from '@lion/validate-messages';
-import { localize } from '@lion/localize';
 import '~/doc-styles';
 import { SimbaOption } from '../src/SimbaOption.js';
 import '../simba-select.js';
@@ -46,21 +45,8 @@ class ColorOption extends SimbaOption {
 customElements.define('color-option', ColorOption);
 ```
 
-Click the flip locale button to see localized default label in action as well as the validator messages, switching between Dutch and English.
-
 ```js preview-story
 export const select = () => html`
-  <button
-    @click=${() => {
-      if (localize.locale === 'en-GB') {
-        localize.locale = 'nl-NL';
-      } else {
-        localize.locale = 'en-GB';
-      }
-    }}
-  >
-    flip locale
-  </button>
   <simba-select
     style="max-width: 400px;"
     .validators=${[new Required()]}
