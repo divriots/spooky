@@ -52,6 +52,7 @@ export const inputStyles = css`
   }
 
   :host([theme='dark']) ::slotted([slot='label']) {
+    font-size: 1.25rem;
     color: var(--simba-color-primary-500);
   }
 
@@ -62,7 +63,7 @@ export const inputStyles = css`
   :host([theme='dark'])
     ::slotted(.form-control:not([type='checkbox']):not([type='radio']):not([disabled])) {
     color: ${coolGray[100]};
-    background-color: var(--simba-color-primary-500);
+    background-color: ${coolGray[800]};
   }
 
   :host([theme='dark'])
@@ -76,14 +77,15 @@ export const inputStyles = css`
 
   :host([theme='dark'][disabled]) ::slotted(.form-control) {
     background-color: ${coolGray[600]};
-    color: ${coolGray[50]};
+    color: ${coolGray[400]};
+    border: none;
   }
 
   :host([theme='dark'][disabled]) ::slotted([slot='label']) {
-    color: ${coolGray[50]};
+    color: ${coolGray[400]};
   }
 
   :host([theme='dark'][disabled]) ::slotted([slot='help-text']) {
-    color: ${coolGray[200]};
+    color: ${coolGray[300]};
   }
 `;
