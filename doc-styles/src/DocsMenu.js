@@ -22,7 +22,7 @@ export class DocsMenu extends LitElement {
         h1 {
           color: ${coolGray[50]};
           padding-right: ${spacing['2']};
-          transition: all 5s ease-in-out;
+          transition: all 4s ease-in-out;
         }
         h1:hover {
           z-index: -10;
@@ -41,17 +41,7 @@ export class DocsMenu extends LitElement {
             0px 39px #991B1B, 0px 40px #991B1B, 0px 41px #991B1B,
             0px 42px #991B1B, 0px 43px #991B1B, 0px 44px #991B1B,
             0px 45px #991B1B, 0px 46px #991B1B, 0px 47px #991B1B,
-            0px 48px #991B1B, 0px 49px #991B1B, 0px 50px #991B1B,
-            0px 51px #991B1B, 0px 52px #991B1B, 0px 53px #991B1B,
-            0px 54px #991B1B, 0px 55px #991B1B, 0px 56px #991B1B,
-            0px 57px #991B1B, 0px 58px #991B1B, 0px 59px #991B1B,
-            0px 60px #991B1B, 0px 61px #991B1B, 0px 62px #991B1B,
-            0px 63px #991B1B, 0px 64px #991B1B, 0px 65px #991B1B,
-            0px 66px #991B1B, 0px 67px #991B1B, 0px 68px #991B1B,
-            0px 69px #991B1B, 0px 70px #991B1B, 0px 71px #991B1B,
-            0px 72px #991B1B, 0px 73px #991B1B, 0px 74px #991B1B,
-            0px 75px #991B1B, 0px 76px #991B1B, 0px 77px #991B1B,
-            0px 78px #991B1B, 0px 79px #991B1B, 0px 80px #991B1B;
+            0px 48px #991B1B, 0px 49px #991B1B, 0px 50px #991B1B;
         }
       `,
     ];

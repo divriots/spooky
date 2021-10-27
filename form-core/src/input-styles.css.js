@@ -34,7 +34,6 @@ export const inputStyles = css`
     > .input-group__input
     ::slotted(.form-control:focus-visible) {
     outline: none;
-    border-color: transparent;
     box-shadow: 0 0 0 2px ${coolGray[300]};
   }
 
