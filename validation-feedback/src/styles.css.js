@@ -1,13 +1,13 @@
 import { css } from '~/core';
 import { red, amber, emerald, blue } from '~/colors';
-import { typographyMixin } from '~/typography';
+import { spacing } from '~/spacing';
 
 export default css`
   :host {
     display: block;
     color: ${red[600]};
-    margin-top: 2px;
-    ${typographyMixin('sans', 'sm')};
+    margin-top: 6px;
+    font-family: var(--simba-font-creepster);
   }
 
   .feedback-container {
@@ -19,6 +19,11 @@ export default css`
   .icon,
   .text {
     transition: var(--simba-theme-transition);
+  }
+
+  .icon {
+    height: ${spacing['6']};
+    width: ${spacing['6']};
   }
 
   .error {

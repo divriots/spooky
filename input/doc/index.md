@@ -22,6 +22,7 @@ export const input = () => html`
     name="firstname"
     help-text="Your first name"
     placeholder="Morticia"
+    autocomplete="off"
   ></simba-input>
 `;
 ```
