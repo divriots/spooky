@@ -22,12 +22,12 @@ class DemoTypography extends ThemeMixin(LitElement) {
     return css`
       :host {
         color: var(--simba-color-primary-700);
-        ${typographyMixin('sans', 'xl', 'semibold')};
+        ${typographyMixin('creepster', 'xl', 'semibold')};
         transition: var(--theme-color-transition);
       }
 
       :host([theme='dark']) {
-        color: var(--simba-color-primary-200);
+        color: var(--simba-color-primary-700);
       }
     `;
   }
@@ -52,8 +52,7 @@ import { family, size, weight } from '../src/typography.css.js';
 
 css`
   :host {
-    --simba-font-sans: ${family['sans']};
-    --simba-font-serif: ${family['serif']};
+    '--simba-font-creepster':${family['creepster']},--simba-font-serif: ${family['serif']};
     --simba-font-mono: ${family['mono']};
     --simba-font-size-base: ${size['base'].size};
     --simba-font-line-height-base: ${size['base'].lineHeight};
@@ -81,7 +80,7 @@ export const family = () =>
       .mixin=${_typographyMixin}
       .mixinParams=${['lg', 'normal']}
       .mixinDynamicParamIndex=${0}
-      .mixinDynamicParams=${['sans', 'serif', 'mono']}
+      .mixinDynamicParams=${['creepster', 'serif', 'mono']}
     ></token-display>
   `;
 ```
@@ -93,7 +92,7 @@ You can specify the size of font as the second parameter.
 E.g. for large font-size:
 
 ```js
-typographyMixin('sans', 'lg');
+typographyMixin('creepster', 'lg');
 ```
 
 ```js story
@@ -103,7 +102,7 @@ export const sizes = () =>
       css-mixin
       token-type="typography"
       .mixin=${_typographyMixin}
-      .mixinParams=${['sans', 'normal']}
+      .mixinParams=${['creepster', 'normal']}
       .mixinDynamicParamIndex=${1}
       .mixinDynamicParams=${[
         'xs',

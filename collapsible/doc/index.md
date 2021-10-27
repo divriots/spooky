@@ -14,12 +14,12 @@ import '~/button/simba-button.js';
 export const collapsible = () => html`
   <simba-collapsible>
     <simba-collapsible-button variation="outline" slot="invoker"
-      >More about cars</simba-collapsible-button
+      >More about zombies</simba-collapsible-button
     >
     <div slot="content">
-      Most definitions of cars say that they run primarily on roads, seat one to
-      eight people, have four tires, and mainly transport people rather than
-      goods.
+      A zombie is a mythological undead corporeal revenant created through the
+      reanimation of a corpse. Zombies are most commonly found in horror and
+      fantasy genre works.
     </div>
   </simba-collapsible>
 `;
@@ -41,34 +41,12 @@ export const opened = () => html`
   >
   <simba-collapsible ${ref(contentRef)} opened>
     <simba-collapsible-button variation="outline" slot="invoker"
-      >More about cars</simba-collapsible-button
+      >More about zombies</simba-collapsible-button
     >
     <div slot="content">
-      Most definitions of cars say that they run primarily on roads, seat one to
-      eight people, have four tires, and mainly transport people rather than
-      goods.
-    </div>
-  </simba-collapsible>
-`;
-```
-
-## Changing the invoker
-
-We suggest using the outline button as the collapsible button variant, but you are free to use the other button variants.
-See Button docs for more information.
-
-It must use `simba-collapsible-button` in order for the + - sign toggle to work and be design compliant.
-
-```js preview-story
-export const btnVariation = () => html`
-  <simba-collapsible opened>
-    <simba-collapsible-button variation="primary" slot="invoker"
-      >More about cars</simba-collapsible-button
-    >
-    <div slot="content">
-      Most definitions of cars say that they run primarily on roads, seat one to
-      eight people, have four tires, and mainly transport people rather than
-      goods.
+      A zombie is a mythological undead corporeal revenant created through the
+      reanimation of a corpse. Zombies are most commonly found in horror and
+      fantasy genre works.
     </div>
   </simba-collapsible>
 `;
@@ -83,18 +61,19 @@ a focus state will be shown on the content node when the user tabs into the focu
 export const focusable = () => html`
   <simba-collapsible opened>
     <simba-collapsible-button variation="outline" slot="invoker"
-      >More about cars</simba-collapsible-button
+      >More about zombies</simba-collapsible-button
     >
     <div slot="content">
-      Most definitions of cars say that they run primarily on roads, seat one to
-      eight
+      A zombie is a mythological undead corporeal
       <a
-        href="https://en.wikipedia.org/wiki/People"
+        href="https://en.wikipedia.org/wiki/Revenant"
         target="_blank"
         noopener
         noreferrer
-        >people</a
-      >, have four tires, and mainly transport people rather than goods.
+        >revenant</a
+      >
+      created through the reanimation of a corpse. Zombies are most commonly
+      found in horror and fantasy genre works.
     </div>
   </simba-collapsible>
 `;

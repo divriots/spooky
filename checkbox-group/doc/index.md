@@ -17,16 +17,24 @@ loadDefaultFeedbackMessages();
 
 ```js preview-story
 export const input = () => html`
-  <simba-checkbox-group 
+  <simba-checkbox-group
     name="lion_favorite"
-    label="Favorite lions"
-    help-text="Don't pick Scar >:("
+    label="Favorite costumes"
+    help-text="Don't pick none!"
   >
-    <simba-checkbox label="Simba" .choiceValue=${'simba'}></simba-checkbox>
-    <simba-checkbox label="Sarafina" .choiceValue=${'sarafina'} checked></simba-checkbox>
-    <simba-checkbox label="Mufasa" .choiceValue=${'mufasa'}></simba-checkbox>
-    <simba-checkbox label="Scar" disabled .choiceValue=${'scar'}></simba-checkbox>
-    <simba-checkbox label="Nala" .choiceValue=${'nala'}></simba-checkbox>
+    <simba-checkbox label="Pumpkin" .choiceValue=${'pumpkin'}></simba-checkbox>
+    <simba-checkbox
+      label="Ghost"
+      .choiceValue=${'ghost'}
+      checked
+    ></simba-checkbox>
+    <simba-checkbox label="Zombie" .choiceValue=${'zombie'}></simba-checkbox>
+    <simba-checkbox label="Witch" .choiceValue=${'witch'}></simba-checkbox>
+    <simba-checkbox
+      label="None"
+      disabled
+      .choiceValue=${'none'}
+    ></simba-checkbox>
   </simba-checkbox-group>
 `;
 ```
@@ -57,17 +65,17 @@ You can also prefill and disable the stepper in case you don't want your user to
 
 ```js preview-story
 export const inputDisabled = () => html`
-  <simba-checkbox-group 
+  <simba-checkbox-group
     .validators=${[new Required()]}
-    label="Worst lions"
-    name="lion_worst" 
+    label="Best pets"
+    name="best_pets"
     disabled
   >
-    <simba-checkbox label="Simba" .choiceValue=${'simba'}></simba-checkbox>
-    <simba-checkbox label="Sarafina" .choiceValue=${'sarafina'}></simba-checkbox>
-    <simba-checkbox label="Mufasa" checked .choiceValue=${'mufasa'}></simba-checkbox>
-    <simba-checkbox label="Scar" checked .choiceValue=${'scar'}></simba-checkbox>
-    <simba-checkbox label="Nala" .choiceValue=${'nala'}></simba-checkbox>
+    <simba-checkbox label="Black cat" .choiceValue=${'cat'}></simba-checkbox>
+    <simba-checkbox label="Owl" .choiceValue=${'owl'}></simba-checkbox>
+    <simba-checkbox label="Rat" checked .choiceValue=${'rat'}></simba-checkbox>
+    <simba-checkbox label="Bat" checked .choiceValue=${'bat'}></simba-checkbox>
+    <simba-checkbox label="Toad" .choiceValue=${'toad'}></simba-checkbox>
   </simba-checkbox-group>
 `;
 ```

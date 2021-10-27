@@ -17,6 +17,7 @@ export const choiceBoxStyles = css`
   }
 
   ::slotted([slot='label']) {
+     color:white;
     cursor: pointer;
     margin-left: 6px;
     font-weight: ${weight['normal']};

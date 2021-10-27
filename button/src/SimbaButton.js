@@ -19,6 +19,10 @@ export class SimbaButton extends ThemeMixin(LionButton) {
         type: String, // 'small', '', 'large'
         reflect: true,
       },
+      font: {
+        type: String,
+        reflect: true,
+      },
     };
   }
 

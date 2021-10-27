@@ -1,13 +1,17 @@
 import { css } from '~/core';
 
 export const family = {
-  sans: css`'Inter var', ui-sans-serif, system-ui, -apple-system,
+  sans: css`
+  'Inter var', ui-sans-serif, system-ui, -apple-system,
   BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
   sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji'`,
   serif: css` ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif`,
   mono: css`ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace`,
+  creepster: css`
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+  `,
 };
 
 // prettier-ignore

@@ -17,18 +17,11 @@ Click the flip locale button to see localized default label in action as well as
 
 ```js preview-story
 export const input = () => html`
-  <button @click=${() => {
-    if (localize.locale === 'en-GB') {
-      localize.locale = 'nl-NL';
-    } else {
-      localize.locale = 'en-GB';
-    }
-  }}>flip locale</button>
-  <simba-input 
+  <simba-input
     .validators=${[new Required()]}
-    name="firstname" 
-    help-text="Your first name" 
-    placeholder="Joe"
+    name="firstname"
+    help-text="Your first name"
+    placeholder="Morticia"
   ></simba-input>
 `;
 ```
@@ -39,10 +32,10 @@ You can also prefill and disable the input in case you don't want your user to c
 
 ```js preview-story
 export const inputDisabled = () => html`
-  <simba-input 
-    name="firstname" 
-    help-text="Your first name"
-    .modelValue=${"Joe"}
+  <simba-input
+    name="firstname"
+    help-text="Your last name"
+    .modelValue=${'Adams'}
     disabled
   ></simba-input>
 `;
