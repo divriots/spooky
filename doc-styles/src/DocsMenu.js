@@ -2,12 +2,14 @@ import { LitElement, html, css } from '~/core';
 import { coolGray } from '~/colors';
 import { spacing } from '~/spacing';
 import { setTheme } from '~/themes';
+import { typographyMixin } from '~/typography';
 
 export class DocsMenu extends LitElement {
   static get styles() {
     return [
       css`
         :host {
+          ${typographyMixin('creepster', '2xl')};
           position: fixed;
           display: flex;
           justify-content: center;

@@ -8,8 +8,9 @@
 body {
   position: relative;
   font-family: 'Creepster', var(--simba-font-sans);
+  font-size: 1.2rem;
   max-width: 1200px;
-  margin: 125px auto 50px;
+  margin: 150px auto 50px;
   padding: 0 30px;
   color: var(--simba-text-color-dark);
   background-color: var(--simba-bg-color-dark);
