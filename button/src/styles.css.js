@@ -22,7 +22,7 @@ export default css`
   :host(:hover) {
     background-color: var(--simba-color-primary-800);
     color: var(--simba-color-primary-300);
-    border: var(--simba-color-primary-500) solid 2px;
+    box-shadow: inset 0px 0px 0px 2px var(--simba-color-primary-500);
   }
 
   :host(:active) {
@@ -36,7 +36,7 @@ export default css`
   :host([variation='secondary']:hover) {
     background-color: var(--simba-color-secondary-800);
     color: var(--simba-color-secondary-300);
-    border: var(--simba-color-secondary-500) solid 2px;
+    box-shadow: inset 0px 0px 0px 2px var(--simba-color-secondary-500);
   }
 
   :host([variation='secondary']:active) {
@@ -50,7 +50,7 @@ export default css`
   }
 
   :host([variation='outline']:hover) {
-    border: var(--simba-color-primary-500) solid 3px;
+    box-shadow: inset 0px 0px 0px 1px var(--simba-color-primary-500);
   }
 
   :host([variation='outline']:active) {

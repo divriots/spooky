@@ -1,13 +1,10 @@
-# Spooky-starter
+# Spooky
 
 ```js script
 import '~/doc-styles';
 ```
 
-A Halloween themed starter kit based on [Simba] (https://backlight.dev/edit/5vtJtbY04aoD1dGKcsu1/) and [lion](https://lion-web.netlify.app/) based design system as a starter kit
-for [Backlight](https://backlight.dev/), an all-in-one Design System platform,
-design inspired by [TailwindCSS](https://tailwindcss.com/).
-
+A Halloween themed version of Simba starter kit (https://backlight.dev/edit/5vtJtbY04aoD1dGKcsu1/).
 Click the "Edit" button to also see the source code in the Backlight editor.
 
 ## Features
@@ -27,4 +24,4 @@ This is the recommended way, as backlight gives you an all-in-one Design System 
 
 In order to create your own project from this starter kit using Backlight, go to the [Backlight website](https://backlight.dev/) and sign up or log in if you already have an account.
 
-Make sure you have a Backlight Workspace, then go to [spooky-starter on backlight](https://backlight.dev/edit/qGNKrpV0MN3VHs07aYS6/) and click the **Duplicate** button in the top right corner, this will create a project based on this starter-kit for you.
+Make sure you have a Backlight Workspace, then go to [spooky on backlight](https://backlight.dev/edit/qGNKrpV0MN3VHs07aYS6/) and click the **Duplicate** button in the top right corner, this will create a project based on this starter-kit for you.
