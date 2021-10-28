@@ -18,7 +18,7 @@ export const input = () => html`
     .validators=${[new Required()]}
     name="date"
     help-text="DD/MM/YYYY"
-    placeholder="01/01/2021"
+    placeholder="31/10/2021"
   ></simba-input-datepicker>
 `;
 ```
@@ -37,7 +37,7 @@ export const inputMinimum = () => html`
   <simba-input-datepicker
     .validators=${[new Required(), new MinDate(new Date())]}
     name="date"
-    placeholder="${today}"
+    placeholder="31/10/2021"
     help-text="Must be later than today"
   ></simba-input-datepicker>
 `;
@@ -59,7 +59,7 @@ export const inputRange = () => html`
       new MinMaxDate({ min: firstDay, max: lastDay }),
     ]}
     name="date"
-    placeholder="01/${`0${month + 1}`.slice(-2)}/${year}"
+    placeholder="31/10/2021"
     help-text="Must be in this month"
   ></simba-input-datepicker>
 `;

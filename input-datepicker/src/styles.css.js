@@ -63,7 +63,7 @@ export const pickerStyles = css`
   }
 
   :host([theme='dark'][disabled]) ::slotted([slot='suffix']) {
-    background-color: ${coolGray[600]};
+    display: none;
   }
 `;
 
@@ -87,12 +87,11 @@ export const frameStyles = css`
 
   .calendar-overlay__header {
     position: relative;
-    background-color: var(--simba-color-primary-500);
+    background-color: var(--simba-color-primary-700);
     color: ${coolGray[50]};
   }
 
   .calendar-overlay__heading {
-    ${typographyMixin('sans', 'xl', 'bold')};
     margin: 0;
     padding: ${spacing['1.5']} ${spacing['3']};
   }
@@ -115,7 +114,6 @@ export const frameStyles = css`
     text-align: center;
     padding-bottom: ${spacing['4']};
     margin: 0;
-    ${typographyMixin('sans', 'lg', 'bold')};
   }
 `;
 
@@ -127,7 +125,6 @@ export const calendarStyles = css`
   }
 
   .calendar__navigation simba-button {
-    ${typographyMixin('mono', 'xl', 'medium')};
     padding: ${spacing['0']};
     margin: -2 ${spacing['2']} 0 ${spacing['2']};
     margin-top: -2px;
@@ -139,7 +136,6 @@ export const calendarStyles = css`
   }
 
   .calendar__navigation-heading {
-    ${typographyMixin('sans', '', 'bold')};
     text-align: center;
   }
 

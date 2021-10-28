@@ -33,7 +33,6 @@ export class SimbaDialogFrame extends ThemeMixin(LitElement) {
         text-align: center;
         padding: ${spacing['3']};
         border-bottom: 1px solid ${coolGray[300]};
-        ${typographyMixin('sans', 'lg', 'semibold')}
       }
 
       :host([theme='dark']) {
