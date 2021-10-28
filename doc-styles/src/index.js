@@ -2,7 +2,7 @@ import 'https://gitcdn.link/repo/PrismJS/prism-themes/master/themes/prism-vsc-da
 import { preventFart } from 'dark-theme-utils';
 import './styles.css';
 import '../docs-menu.js';
-import './Ghost/Ghost.js';
+import '@divriots/boo-ghost';
 
 /**
  * TODO: Find a way to put this inside a regular script tag in head so it executes
@@ -14,3 +14,6 @@ preventFart();
 
 const docsMenu = document.createElement('docs-menu');
 document.body.prepend(docsMenu);
+
+const booEl = document.createElement('boo-ghost');
+document.documentElement.prepend(booEl);
