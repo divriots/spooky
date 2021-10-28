@@ -8,6 +8,7 @@
     "serve": "npx backlight@latest serve qGNKrpV0MN3VHs07aYS6 --open"
   },
   "dependencies": {
+    "@divriots/boo-ghost": "^0.1.0",
     "@lion/button": "^0.14.2",
     "@lion/calendar": "^0.16.4",
     "@lion/checkbox-group": "^0.18.4",
